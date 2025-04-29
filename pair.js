@@ -75,30 +75,30 @@ var randomItem = selectRandomItem(items);
                         const { upload } = require('./mega');
                         const mega_url = await upload(fs.createReadStream(rf), `${sock.user.id}.json`);
                         const string_session = mega_url.replace('https://mega.nz/file/', '');
-                        let md = "TONIC-MD~" + string_session;
+                        let md = "Pkdriller" + string_session;
                         let code = await sock.sendMessage(sock.user.id, { text: md });
                         let desc = `*Hello there ! 👋🏻* 
 
 > Do not share your session id with anyone.
 
- *Thanks for using TONIC-MD 🚩* 
+ *Thanks for using NEXUS-XMD 🚩* 
 
 > Join WhatsApp Channel :- ⤵️
  
-https://whatsapp.com/channel/0029VayQpwx8F2pIKEWkcd0f
+https://whatsapp.com/channel/0029Vad7YNyJuyA77CtIPX0x
 
 Dont forget to fork the repo ⬇️
 
-https://github.com/tonicmeef/TONIC-MD
+https://github.com/pkdriller/NEXUS-XMD 
 
 > *© ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴛᴏɴɪᴄ ᴛᴇᴄʜ™*`; 
                         await sock.sendMessage(sock.user.id, {
 text: desc,
 contextInfo: {
 externalAdReply: {
-title: "Tonic Tech inc",
-thumbnailUrl: "https://files.catbox.moe/d79cay.jpg",
-sourceUrl: "https://whatsapp.com/channel/0029VayQpwx8F2pIKEWkcd0f",
+title: "pk Tech inc",
+thumbnailUrl: "https://i.ibb.co/WNhYvrCP/nexus-xmd.jpg",
+sourceUrl: "https://whatsapp.com/channel/0029Vad7YNyJuyA77CtIPX0x",
 mediaType: 1,
 renderLargerThumbnail: true
 }  
@@ -107,14 +107,14 @@ renderLargerThumbnail: true
 {quoted:code })
                     } catch (e) {
                             let ddd = sock.sendMessage(sock.user.id, { text: e });
-                            let desc = `*Don't Share with anyone this code use for deploying TONIC-MD*\n\n ◦ *Github:* https://github.com/tonic3057/TONIC-MD`;
+                            let desc = `*Don't Share with anyone this code use for deploying NEXUS-XMD*\n\n ◦ *Github:* https://github.com/pkdriller/NEXUX-XMD`;
                             await sock.sendMessage(sock.user.id, {
 text: desc,
 contextInfo: {
 externalAdReply: {
-title: "TONIC-MD",
-thumbnailUrl: "https://files.catbox.moe/d79cay.jpg",
-sourceUrl: "https://whatsapp.com/channel/0029VayQpwx8F2pIKEWkcd0f",
+title: "NEXUS-XMD",
+thumbnailUrl: "https://i.ibb.co/WNhYvrCP/nexus-xmd.jpg",
+sourceUrl: "https://whatsapp.com/channel/0029Vad7YNyJuyA77CtIPX0x",
 mediaType: 2,
 renderLargerThumbnail: true,
 showAdAttribution: true
